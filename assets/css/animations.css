@@ -1,0 +1,146 @@
+/* ==============================================
+   ANIMATIONS.CSS
+   Scroll-triggered reveal animations.
+   JS adds .is-visible to trigger them.
+   Uses CSS custom property --delay for stagger.
+   ============================================== */
+
+
+/* ----------------------------------------------
+   BASE REVEAL STATE
+   Elements start hidden; JS adds .is-visible
+   ---------------------------------------------- */
+
+.reveal-up,
+.reveal-from-left,
+.reveal-from-right {
+  opacity: 0;
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+  transition-delay: var(--delay, 0s);
+}
+
+/* Slide up (default for most text/cards) */
+.reveal-up {
+  transform: translateY(32px);
+}
+
+/* Slide from left (images, left columns) */
+.reveal-from-left {
+  transform: translateX(-40px);
+}
+
+/* Slide from right (hero image) */
+.reveal-from-right {
+  transform: translateX(40px);
+}
+
+/* Triggered state — added by IntersectionObserver */
+.reveal-up.is-visible,
+.reveal-from-left.is-visible,
+.reveal-from-right.is-visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .reveal-up,
+  .reveal-from-left,
+  .reveal-from-right {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+
+/* ----------------------------------------------
+   PARALLAX HERO IMAGE
+   Subtle vertical drift as you scroll.
+   Handled in scroll-animations.js.
+   ---------------------------------------------- */
+
+.hero__image img {
+  will-change: transform;
+  /* JS sets transform: translateY(Npx) on scroll */
+}
+
+
+/* ----------------------------------------------
+   BOOK COVER 3D TILT
+   ---------------------------------------------- */
+
+.book__cover {
+  transform: perspective(800px) rotateY(-4deg);
+  transition: transform var(--transition-medium);
+  box-shadow: var(--shadow-book);
+}
+.book__cover:hover {
+  transform: perspective(800px) rotateY(0deg);
+}
+
+
+/* ----------------------------------------------
+   NAV SCROLL SHADOW
+   Added by nav.js on scroll
+   ---------------------------------------------- */
+
+.site-nav {
+  transition: box-shadow var(--transition-fast), background var(--transition-fast);
+}
+
+
+/* ----------------------------------------------
+   CARD HOVER LIFT
+   ---------------------------------------------- */
+
+.card {
+  transition:
+    border-color var(--transition-fast),
+    background var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+.card:hover {
+  transform: translateY(-2px);
+}
+
+
+/* ----------------------------------------------
+   FRAMEWORK EQUATION HIGHLIGHT
+   Each span pulses in on first scroll
+   ---------------------------------------------- */
+
+.framework__equation span {
+  display: inline-block;
+  color: var(--color-ink-mid);
+  font-style: italic;
+  transition: color 0.3s ease;
+}
+.framework.is-visible .framework__equation span {
+  color: var(--color-warm-rule);
+}
+
+/* The operators stay muted; the = and result get the accent */
+.framework__op {
+  color: var(--color-ink-mid) !important;
+}
+.framework__op--equals {
+  color: var(--color-accent) !important;
+}
+.framework.is-visible .framework__result {
+  color: var(--color-accent-soft) !important;
+  transition-delay: 0.4s;
+}
+
+
+/* ----------------------------------------------
+   QUOTE SECTION — scale in
+   ---------------------------------------------- */
+
+.quote-text {
+  transition: opacity 0.9s ease, transform 0.9s ease;
+  transition-delay: 0.1s;
+}

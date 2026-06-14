@@ -1,0 +1,50 @@
+---
+# =============================================================
+#  STARTER PAGE TEMPLATE
+#  -------------------------------------------------------------
+#  Copy this file to create a new page. Steps:
+#    1. Duplicate this file, rename it (e.g. about.njk, speaking.njk)
+#    2. Update pageTitle and pageDescription below
+#    3. Replace the content between the <section> tags
+#    4. The nav + footer are added automatically (layout: base.njk)
+#
+#  This file has `permalink: false` so it does NOT build into a
+#  live page. Once you copy & rename it, remove that line.
+# =============================================================
+layout: base.njk
+permalink: false
+pageTitle: "Page Title | Radical Responsibility"
+pageDescription: "A one-sentence description of this page for search engines and social sharing."
+# Optional: override the social share image for this page
+# ogImage: "/assets/images/your-custom-og-image.jpg"
+---
+
+<!-- =============================================
+     PAGE CONTENT
+     Use the existing utility classes:
+       .section-inner   — max-width wrapper + padding
+       .section-label   — small uppercase eyebrow
+       .section-title   — large serif heading (use <em> for italic)
+       .reveal-up       — fade + slide up on scroll
+       .btn .btn--primary / .btn--secondary — buttons
+       .rule            — small decorative divider
+     ============================================= -->
+
+<section class="standard-page">
+  <div class="standard-page__inner section-inner">
+    <p class="section-label reveal-up">Section Label</p>
+    <h1 class="section-title reveal-up" style="--delay: 0.1s">
+      Your Heading <em>Here</em>
+    </h1>
+    <div class="rule reveal-up" style="--delay: 0.15s"></div>
+
+    <div class="standard-page__body reveal-up" style="--delay: 0.2s">
+      <p>Your first paragraph goes here. The <code>.standard-page__body</code>
+      wrapper gives comfortable reading width and spacing for long-form text.</p>
+
+      <p>Add as many paragraphs as you need. To stagger their entrance
+      animations, give each a <code>--delay</code> value that increases
+      slightly (0.2s, 0.3s, 0.4s...).</p>
+    </div>
+  </div>
+</section>

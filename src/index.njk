@@ -1,0 +1,234 @@
+---
+layout: base.njk
+pageTitle: "Radical Responsibility | Lee Hahn"
+pageDescription: "The Math of Relationships, Emotions, and Change. A new book by Lee Hahn."
+---
+
+<!-- =============================================
+     HERO
+     ============================================= -->
+<section class="hero" id="hero">
+  <div class="hero__text">
+    <p class="section-label reveal-from-left">{{ site.hero.eyebrow }}</p>
+    <h1 class="hero__title reveal-from-left" style="--delay: 0.1s">
+      {{ site.hero.title }}<br>
+      <em>{{ site.hero.titleItalic }}</em>
+    </h1>
+    <p class="hero__subtitle reveal-from-left" style="--delay: 0.2s">{{ site.hero.subtitle }}</p>
+    <div class="rule reveal-from-left" style="--delay: 0.25s"></div>
+    <p class="hero__body reveal-from-left" style="--delay: 0.3s">{{ site.hero.body }}</p>
+    <div class="hero__cta reveal-from-left" style="--delay: 0.4s">
+      <a href="{{ site.hero.ctaPrimary.href }}" class="btn btn--primary">{{ site.cta.buyLabel }}</a>
+      <a href="{{ site.hero.ctaSecondary.href }}" class="btn btn--secondary" target="_blank" rel="noopener">{{ site.hero.ctaSecondary.label }}</a>
+    </div>
+  </div>
+  <div class="hero__image reveal-from-right">
+    <img
+      src="{{ site.hero.image.src }}"
+      alt="{{ site.hero.image.alt }}"
+      width="800"
+      height="1000"
+      loading="eager"
+      fetchpriority="high"
+    >
+    <div class="hero__image-caption">Lee Hahn</div>
+  </div>
+</section>
+
+<!-- =============================================
+     FRAMEWORK
+     ============================================= -->
+<section class="framework" id="framework">
+  <div class="section-inner">
+    <p class="section-label section-label--dark reveal-up">{{ site.framework.label }}</p>
+    <h2 class="section-title section-title--light reveal-up" style="--delay: 0.1s">
+      {{ site.framework.title }}<br><em>{{ site.framework.titleItalic }}</em>
+    </h2>
+    <div class="framework__equation reveal-up" style="--delay: 0.2s">
+      <span>{{ site.framework.equation[0] }}</span>
+      <span class="framework__op">+</span>
+      <span>{{ site.framework.equation[1] }}</span>
+      <span class="framework__op">+</span>
+      <span>{{ site.framework.equation[2] }}</span>
+      <span class="framework__op framework__op--equals">=</span>
+      <span class="framework__result">{{ site.framework.equation[3] }}</span>
+    </div>
+    <p class="framework__body reveal-up" style="--delay: 0.3s">{{ site.framework.body }}</p>
+    <div class="card-grid card-grid--dark">
+      {% for pillar in site.framework.pillars %}
+        <div class="card card--dark reveal-up" style="--delay: {{ loop.index0 * 0.1 }}s">
+          <span class="card__num">{{ pillar.num }}</span>
+          <h3 class="card__title card__title--light">{{ pillar.title }}</h3>
+          <p class="card__body card__body--dark">{{ pillar.body }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     WHO THIS IS FOR
+     ============================================= -->
+<section class="who-for" id="who-for">
+  <div class="section-inner">
+    <p class="section-label reveal-up">{{ site.whoFor.label }}</p>
+    <h2 class="section-title reveal-up" style="--delay: 0.1s">
+      {{ site.whoFor.title }}<br><em>{{ site.whoFor.titleItalic }}</em>
+    </h2>
+    <div class="card-grid card-grid--cream">
+      {% for card in site.whoFor.cards %}
+        <div class="card card--cream reveal-up" style="--delay: {{ (loop.index0 % 3) * 0.1 }}s">
+          <span class="card__icon" aria-hidden="true">◇</span>
+          <h3 class="card__title">{{ card.title }}</h3>
+          <p class="card__body">{{ card.body }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     WHAT YOU'LL LEARN
+     ============================================= -->
+<section class="learn" id="learn">
+  <div class="section-inner">
+    <p class="section-label reveal-up">{{ site.learn.label }}</p>
+    <h2 class="section-title reveal-up" style="--delay: 0.1s">
+      {{ site.learn.title }}<br><em>{{ site.learn.titleItalic }}</em>
+    </h2>
+    <div class="learn-grid">
+      {% for item in site.learn.items %}
+        <div class="learn-item reveal-up" style="--delay: {{ loop.index0 * 0.15 }}s">
+          <span class="learn-item__num" aria-hidden="true">—{{ item.num }}</span>
+          <h3 class="learn-item__title">{{ item.title }}</h3>
+          <p class="learn-item__body">{{ item.body }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     ABOUT LEE
+     ============================================= -->
+<section class="author" id="about">
+  <div class="author__inner section-inner">
+    <div class="author__image reveal-from-left">
+      <img
+        src="{{ site.author.image.src }}"
+        alt="{{ site.author.image.alt }}"
+        width="600"
+        height="750"
+        loading="lazy"
+      >
+    </div>
+    <div class="author__text">
+      <p class="section-label reveal-up">{{ site.author.label }}</p>
+      <h2 class="author__name reveal-up" style="--delay: 0.1s">{{ site.author.name }}</h2>
+      <p class="author__title-line reveal-up" style="--delay: 0.15s">{{ site.author.titleLine }}</p>
+      <div class="rule reveal-up" style="--delay: 0.2s"></div>
+      {% for para in site.author.paragraphs %}
+        <p class="author__body reveal-up" style="--delay: {{ 0.2 + loop.index0 * 0.1 }}s">{{ para | safe }}</p>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     THE BOOK
+     ============================================= -->
+<section class="book" id="book">
+  <div class="book__inner section-inner">
+    <div class="book__cover reveal-from-left">
+      <img
+        src="{{ site.book.image.src }}"
+        alt="{{ site.book.image.alt }}"
+        width="500"
+        height="700"
+        loading="lazy"
+      >
+    </div>
+    <div class="book__text">
+      <p class="section-label section-label--dark reveal-up">{{ site.book.label }}</p>
+      <h2 class="book__title reveal-up" style="--delay: 0.1s">{{ site.book.title }}</h2>
+      <p class="book__subtitle reveal-up" style="--delay: 0.15s">{{ site.book.subtitle }}</p>
+      <div class="rule rule--dark reveal-up" style="--delay: 0.2s"></div>
+      {% for para in site.book.paragraphs %}
+        <p class="book__body reveal-up" style="--delay: {{ 0.2 + loop.index0 * 0.1 }}s">{{ para }}</p>
+      {% endfor %}
+      <a href="{{ site.book.cta.href }}" class="btn btn--primary reveal-up" style="--delay: 0.4s">{{ site.cta.buyLabel }}</a>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     QUOTE
+     ============================================= -->
+<section class="quote-section" id="quote">
+  <div class="quote-section__inner section-inner">
+    <span class="quote-mark reveal-up" aria-hidden="true">"</span>
+    <blockquote class="quote-text reveal-up" style="--delay: 0.1s">
+      {{ site.quotes[0].text }}
+    </blockquote>
+    <cite class="quote-attr reveal-up" style="--delay: 0.2s">— {{ site.quotes[0].attribution }}</cite>
+  </div>
+</section>
+
+<!-- =============================================
+     FINAL CTA
+     ============================================= -->
+<section class="final-cta" id="get-the-book">
+  <div class="final-cta__inner section-inner">
+    <p class="section-label reveal-up">{{ site.finalCta.label }}</p>
+    <h2 class="section-title reveal-up" style="--delay: 0.1s">
+      {{ site.finalCta.title }}<br><em>{{ site.finalCta.titleItalic }}</em>
+    </h2>
+    <p class="final-cta__sub reveal-up" style="--delay: 0.2s">{{ site.finalCta.subtitle }}</p>
+    <a href="{{ site.finalCta.cta.href }}" class="btn btn--primary reveal-up" style="--delay: 0.3s">{{ site.cta.buyLabel }}</a>
+  </div>
+</section>
+
+<!-- =============================================
+     NOTIFY / LAUNCH LIST (Netlify Forms)
+     ============================================= -->
+<section class="notify" id="notify">
+  <div class="notify__inner section-inner">
+    <p class="section-label section-label--dark reveal-up">{{ site.notify.label }}</p>
+    <h2 class="section-title section-title--light reveal-up" style="--delay: 0.1s">
+      {{ site.notify.title }}<br><em>{{ site.notify.titleItalic }}</em>
+    </h2>
+    <p class="notify__body reveal-up" style="--delay: 0.2s">{{ site.notify.body }}</p>
+
+    <form
+      name="launch-list"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      class="notify__form reveal-up"
+      style="--delay: 0.3s"
+      id="notify-form"
+    >
+      <!-- Netlify needs this hidden input to match the form name -->
+      <input type="hidden" name="form-name" value="launch-list">
+
+      <!-- Honeypot field — hidden from humans, bots fill it in -->
+      <p class="hp-field" aria-hidden="true">
+        <label>Don't fill this out if you're human: <input name="bot-field"></label>
+      </p>
+
+      <div class="notify__row">
+        <label for="notify-email" class="sr-only">Email address</label>
+        <input
+          type="email"
+          name="email"
+          id="notify-email"
+          placeholder="{{ site.notify.placeholder }}"
+          required
+          class="notify__input"
+        >
+        <button type="submit" class="btn btn--primary">{{ site.notify.buttonLabel }}</button>
+      </div>
+      <p class="notify__success" id="notify-success" hidden>{{ site.notify.successMessage }}</p>
+    </form>
+  </div>
+</section>

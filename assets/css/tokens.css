@@ -1,0 +1,68 @@
+/* ==============================================
+   TOKENS.CSS
+   Single source of truth for all design values.
+   Never use raw hex values outside this file.
+   ============================================== */
+
+:root {
+  /* ---- Colors ---- */
+  --color-off-white:  #F7F4EF;
+  --color-cream:      #EDE8DF;
+  --color-charcoal:   #1C1C1C;
+  --color-warm-mid:   #6B6057;
+  --color-warm-rule:  #C8BFB0;
+  --color-ink:        #0A0A0A;
+  --color-ink-mid:    #9A8E7F;
+  --color-ink-rule:   #222222;
+  --color-ink-card:   #111111;
+
+  /* ---- Accent (drawn from the book/scale imagery) ---- */
+  /* Warm amber/ochre — the gold of the brass scale. Used sparingly:
+     CTA hover, the equation '=', small accent rules. Not backgrounds. */
+  --color-accent:      #B5832E;
+  --color-accent-soft: #C99A47;
+  --color-accent-deep: #8A6320;
+
+  /* ---- Typography ---- */
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans:  'Inter', system-ui, -apple-system, sans-serif;
+
+  /* ---- Type scale ---- */
+  --text-hero:    clamp(3rem, 5.5vw, 5.2rem);
+  --text-h2:      clamp(2.2rem, 4vw, 3.6rem);
+  --text-h2-sm:   clamp(2rem, 3.5vw, 3rem);
+  --text-quote:   clamp(2rem, 4vw, 3.6rem);
+  --text-pillar:  1.4rem;
+  --text-card:    1.3rem;
+  --text-label:   0.65rem;
+  --text-body:    0.95rem;
+  --text-body-sm: 0.88rem;
+  --text-btn:     0.72rem;
+  --text-caption: 0.7rem;
+
+  /* ---- Line heights ---- */
+  --lh-heading:  1.05;
+  --lh-subhead:  1.2;
+  --lh-body:     1.8;
+
+  /* ---- Letter spacing ---- */
+  --ls-label:    0.22em;
+  --ls-btn:      0.14em;
+  --ls-caption:  0.1em;
+
+  /* ---- Spacing ---- */
+  --section-v:     100px;
+  --section-h:     60px;
+  --section-v-mob: 70px;
+  --section-h-mob: 24px;
+  --max-width:     1280px;
+  --col-gap:       80px;
+  --col-gap-mob:   48px;
+
+  /* ---- Transitions ---- */
+  --transition-fast:   0.2s ease;
+  --transition-medium: 0.4s ease;
+
+  /* ---- Shadows ---- */
+  --shadow-book: 24px 24px 60px rgba(0,0,0,0.55), -4px -4px 20px rgba(255,255,255,0.02);
+}

@@ -1,0 +1,16 @@
+{
+  "name": "radical-responsibility",
+  "version": "1.0.0",
+  "description": "Landing page for Radical Responsibility by Lee Hahn",
+  "scripts": {
+    "start": "eleventy --serve",
+    "dev": "eleventy --serve --watch",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "keywords": ["book", "landing-page", "eleventy"],
+  "author": "Lee Hahn",
+  "license": "ISC"
+}

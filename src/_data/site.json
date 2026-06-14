@@ -1,0 +1,208 @@
+{
+  "site": {
+    "title": "Radical Responsibility",
+    "author": "Lee Hahn",
+    "description": "The Math of Relationships, Emotions, and Change. A new book by Lee Hahn on noticing, owning, and changing your patterns so your life actually shifts.",
+    "url": "https://radicaleresponsibility.com",
+    "ogImage": "/assets/images/og-image.jpg",
+    "twitterHandle": "@leehahn"
+  },
+
+  "links": {
+    "buyBook": "#",
+    "instagram": "https://instagram.com/leehahn",
+    "linkedin": "https://linkedin.com/in/leehahn",
+    "youtube": "https://youtube.com/@leehahn"
+  },
+
+  "cta": {
+    "_comment": "When the book launches, change buyLabel from 'Preorder the Book' to 'Buy the Book'. This updates the nav, hero, book section, and final CTA all at once.",
+    "buyLabel": "Preorder the Book",
+    "buyLabelShort": "Preorder"
+  },
+
+  "nav": {
+    "logo": "Lee Hahn",
+    "links": [
+      { "label": "The Book", "href": "/#book" },
+      { "label": "About", "href": "/#about" },
+      { "label": "Contact", "href": "/contact/" }
+    ]
+  },
+
+  "hero": {
+    "eyebrow": "New Book",
+    "title": "Radical",
+    "titleItalic": "Responsibility",
+    "subtitle": "Will Change How You See Everything",
+    "body": "This isn't about fixing other people. It's about noticing, owning, and changing your patterns so your life actually shifts.",
+    "ctaPrimary": { "href": "#" },
+    "ctaSecondary": { "label": "Follow Lee", "href": "https://instagram.com/leehahn" },
+    "image": { "src": "/assets/images/lee-hero.jpg", "alt": "Lee Hahn — Author of Radical Responsibility" }
+  },
+
+  "framework": {
+    "label": "The Framework",
+    "title": "The math of change",
+    "titleItalic": "is simpler than you think.",
+    "equation": ["Awareness", "Ownership", "Action", "Change"],
+    "body": "Behavior is both science and math. Once you see the equation, you can't unsee it — and you can finally start changing what hasn't worked. Radical Responsibility gives you the framework to stop reacting and start choosing.",
+    "pillars": [
+      {
+        "num": "01",
+        "title": "Awareness",
+        "body": "Most people are operating on autopilot. The first step is noticing your patterns — without judgment, without excuses."
+      },
+      {
+        "num": "02",
+        "title": "Ownership",
+        "body": "Ownership isn't blame. It's power. When you own your role in a situation, you become the one who can change it."
+      },
+      {
+        "num": "03",
+        "title": "Action",
+        "body": "Insight without action is just awareness. This is where the work becomes real — small, deliberate shifts that compound into lasting change."
+      }
+    ]
+  },
+
+  "whoFor": {
+    "label": "Who This Is For",
+    "title": "If you keep ending up",
+    "titleItalic": "in the same place, this is for you.",
+    "cards": [
+      {
+        "title": "People Pleasers",
+        "body": "You've spent years managing everyone else's comfort while quietly resenting it. There's another way to show up in relationships."
+      },
+      {
+        "title": "The Emotionally Depleted",
+        "body": "You give everything to everyone and wonder why you feel empty. Understanding the math of your emotions changes everything."
+      },
+      {
+        "title": "Pattern Repeaters",
+        "body": "Same relationship, different person. Same job, different company. Until you see the pattern, you can't break it."
+      },
+      {
+        "title": "Self-Trust Seekers",
+        "body": "You second-guess every decision and look to others to tell you what's right. Radical Responsibility returns you to yourself."
+      },
+      {
+        "title": "Growth-Oriented Minds",
+        "body": "You've read the books, done the work — but something still feels stuck. This framework gives that effort somewhere to land."
+      },
+      {
+        "title": "Educators & Leaders",
+        "body": "You shape how others think, behave, and grow. Radical Responsibility gives you a framework that actually transfers to others."
+      }
+    ]
+  },
+
+  "learn": {
+    "label": "What You'll Learn",
+    "title": "Three moves.",
+    "titleItalic": "One shift.",
+    "items": [
+      {
+        "num": "01",
+        "title": "Notice",
+        "body": "Before you can change anything, you have to see it clearly. Notice teaches you to observe your patterns, reactions, and emotional triggers without the distortion of shame or defense."
+      },
+      {
+        "num": "02",
+        "title": "Own",
+        "body": "Ownership is the move that most people avoid — and the one that changes everything. Own your role in what's not working, and you take back the power to fix it."
+      },
+      {
+        "num": "03",
+        "title": "Show Up",
+        "body": "The final move is the most visible one. Show Up means acting in alignment with who you want to be — not who fear, habit, or expectation has shaped you into."
+      }
+    ]
+  },
+
+  "author": {
+    "label": "About Lee",
+    "name": "Lee Hahn",
+    "titleLine": "Educator · Author · Framework Builder",
+    "paragraphs": [
+      "Lee Hahn didn't arrive at Radical Responsibility through theory. She arrived through a moment that stopped her cold — a student in crisis, a response she didn't expect from herself, and a question she couldn't let go of: <strong>What is my role in this?</strong>",
+      "That question became a framework. That framework became a practice. And that practice — applied across years of work in education, relationships, and leadership — became this book.",
+      "Lee's work sits at the intersection of behavior science and emotional intelligence. She believes that <strong>responsibility isn't a burden — it's a superpower.</strong> And that the people willing to do the hard work of owning their patterns are the ones who actually change.",
+      "She writes for people who are tired of almost-there. Who want something that actually works."
+    ],
+    "image": { "src": "/assets/images/lee-about.jpg", "alt": "Lee Hahn" }
+  },
+
+  "book": {
+    "label": "The Book",
+    "title": "Radical Responsibility",
+    "subtitle": "The Math of Relationships, Emotions, and Change",
+    "paragraphs": [
+      "Part framework, part field guide — Radical Responsibility gives you the tools to stop reacting to your life and start designing it. Through the lens of Empathy + Accountability = Responsibility, Lee Hahn makes the invisible visible: why you keep ending up where you don't want to be, and exactly what to do differently.",
+      "This isn't soft. It isn't a 30-day challenge. It's a shift in how you see yourself — and everyone else."
+    ],
+    "image": { "src": "/assets/images/book-cover.jpg", "alt": "Radical Responsibility by Lee Hahn — Book Cover" },
+    "cta": { "href": "#" }
+  },
+
+  "quotes": [
+    {
+      "text": "Change is the best apology.",
+      "attribution": "Lee Hahn, Radical Responsibility"
+    },
+    {
+      "text": "Credentials are optional. Contribution isn't.",
+      "attribution": "Lee Hahn, Radical Responsibility"
+    }
+  ],
+
+  "finalCta": {
+    "label": "Get the Book",
+    "title": "Ready to see what you've been",
+    "titleItalic": "missing?",
+    "subtitle": "The framework is simple. The shift is real.",
+    "cta": { "href": "#" }
+  },
+
+  "notify": {
+    "label": "Launch List",
+    "title": "Be first to know",
+    "titleItalic": "when it's out.",
+    "body": "The book is in publishing now. Leave your email and you'll be the first to hear when preorders open and when it launches — no spam, just the news that matters.",
+    "buttonLabel": "Notify Me",
+    "successMessage": "You're on the list. Thank you — talk soon.",
+    "placeholder": "your@email.com"
+  },
+
+  "social": {
+    "label": "Follow Along",
+    "tagline": "The work continues between the pages.",
+    "links": [
+      { "label": "Instagram", "href": "https://instagram.com/leehahn" },
+      { "label": "LinkedIn", "href": "https://linkedin.com/in/leehahn" },
+      { "label": "YouTube", "href": "https://youtube.com/@leehahn" }
+    ]
+  },
+
+  "contact": {
+    "label": "Get in Touch",
+    "title": "Contact",
+    "titleItalic": "Lee",
+    "intro": "For speaking inquiries, interviews, podcast appearances, or to simply share how the work has landed for you — send a note. Lee reads every message.",
+    "fields": {
+      "name": "Your name",
+      "email": "Your email",
+      "subject": "Subject",
+      "message": "Your message"
+    },
+    "buttonLabel": "Send Message",
+    "successMessage": "Thank you — your message is on its way. Lee will be in touch.",
+    "directEmailNote": "Prefer email? Reach out directly at hello@radicaleresponsibility.com"
+  },
+
+  "footer": {
+    "copy": "Lee Hahn. All rights reserved.",
+    "title": "Radical Responsibility"
+  }
+}

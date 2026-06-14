@@ -1,0 +1,57 @@
+---
+layout: base.njk
+pageTitle: "Contact Lee Hahn | Radical Responsibility"
+pageDescription: "Get in touch with Lee Hahn for speaking inquiries, interviews, and podcast appearances."
+---
+
+<section class="contact-page">
+  <div class="contact-page__inner section-inner">
+    <p class="section-label reveal-up">{{ site.contact.label }}</p>
+    <h1 class="section-title reveal-up" style="--delay: 0.1s">
+      {{ site.contact.title }} <em>{{ site.contact.titleItalic }}</em>
+    </h1>
+    <p class="contact-page__intro reveal-up" style="--delay: 0.2s">{{ site.contact.intro }}</p>
+
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      class="contact-form reveal-up"
+      style="--delay: 0.3s"
+      id="contact-form"
+    >
+      <input type="hidden" name="form-name" value="contact">
+
+      <!-- Honeypot — hidden from humans -->
+      <p class="hp-field" aria-hidden="true">
+        <label>Leave this field empty: <input name="bot-field"></label>
+      </p>
+
+      <div class="contact-form__group">
+        <label for="contact-name" class="contact-form__label">{{ site.contact.fields.name }}</label>
+        <input type="text" name="name" id="contact-name" required class="contact-form__input">
+      </div>
+
+      <div class="contact-form__group">
+        <label for="contact-email" class="contact-form__label">{{ site.contact.fields.email }}</label>
+        <input type="email" name="email" id="contact-email" required class="contact-form__input">
+      </div>
+
+      <div class="contact-form__group">
+        <label for="contact-subject" class="contact-form__label">{{ site.contact.fields.subject }}</label>
+        <input type="text" name="subject" id="contact-subject" class="contact-form__input">
+      </div>
+
+      <div class="contact-form__group">
+        <label for="contact-message" class="contact-form__label">{{ site.contact.fields.message }}</label>
+        <textarea name="message" id="contact-message" rows="6" required class="contact-form__input contact-form__textarea"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn--primary">{{ site.contact.buttonLabel }}</button>
+      <p class="contact-form__success" id="contact-success" hidden>{{ site.contact.successMessage }}</p>
+    </form>
+
+    <p class="contact-page__direct">{{ site.contact.directEmailNote }}</p>
+  </div>
+</section>

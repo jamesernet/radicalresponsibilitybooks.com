@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- =============================================
+       PRIMARY META
+       ============================================= -->
+  <title>{{ pageTitle if pageTitle else site.site.title + " | " + site.site.author }}</title>
+  <meta name="description" content="{{ pageDescription if pageDescription else site.site.description }}">
+  <meta name="author" content="{{ site.site.author }}">
+  <link rel="canonical" href="{{ site.site.url }}{{ page.url }}">
+
+  <!-- =============================================
+       OPEN GRAPH (Facebook, LinkedIn, iMessage)
+       ============================================= -->
+  <meta property="og:type" content="{{ ogType if ogType else 'website' }}">
+  <meta property="og:title" content="{{ pageTitle if pageTitle else site.site.title }}">
+  <meta property="og:description" content="{{ pageDescription if pageDescription else site.site.description }}">
+  <meta property="og:url" content="{{ site.site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.site.url }}{{ ogImage if ogImage else site.site.ogImage }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="{{ site.site.title }}">
+
+  <!-- =============================================
+       TWITTER / X CARD
+       ============================================= -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="{{ site.site.twitterHandle }}">
+  <meta name="twitter:title" content="{{ pageTitle if pageTitle else site.site.title }}">
+  <meta name="twitter:description" content="{{ pageDescription if pageDescription else site.site.description }}">
+  <meta name="twitter:image" content="{{ site.site.url }}{{ ogImage if ogImage else site.site.ogImage }}">
+
+  <!-- =============================================
+       STRUCTURED DATA / SCHEMA.ORG
+       Paste your page-specific schema in the
+       page template using the `schema` block.
+       The base Book schema lives here always.
+       ============================================= -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Book",
+        "name": "Radical Responsibility",
+        "alternateName": "The Math of Relationships, Emotions, and Change",
+        "author": {
+          "@type": "Person",
+          "name": "Lee Hahn",
+          "url": "{{ site.site.url }}"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Lee Hahn"
+        },
+        "description": "{{ site.site.description }}",
+        "url": "{{ site.site.url }}",
+        "image": "{{ site.site.url }}{{ site.book.image.src }}",
+        "inLanguage": "en",
+        "genre": ["Self-Help", "Personal Development", "Psychology"]
+      },
+      {
+        "@type": "Person",
+        "name": "Lee Hahn",
+        "url": "{{ site.site.url }}",
+        "image": "{{ site.site.url }}{{ site.author.image.src }}",
+        "jobTitle": "{{ site.author.titleLine }}",
+        "sameAs": [
+          "{{ site.links.instagram }}",
+          "{{ site.links.linkedin }}",
+          "{{ site.links.youtube }}"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "name": "{{ site.site.title }}",
+        "url": "{{ site.site.url }}",
+        "description": "{{ site.site.description }}"
+      }
+    ]
+  }
+  </script>
+
+  {% if extraSchema %}{{ extraSchema | safe }}{% endif %}
+
+  <!-- =============================================
+       FONTS
+       ============================================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- =============================================
+       STYLES
+       ============================================= -->
+  <link rel="stylesheet" href="/assets/css/tokens.css">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/animations.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+
+  {% if extraStyles %}{{ extraStyles | safe }}{% endif %}
+
+  <!-- Favicon placeholder — replace with real assets -->
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  {% include "partials/nav.njk" %}
+
+  <main id="main-content">
+    {{ content | safe }}
+  </main>
+
+  {% include "partials/footer.njk" %}
+
+  <!-- =============================================
+       SCRIPTS
+       ============================================= -->
+  <script src="/assets/js/scroll-animations.js" defer></script>
+  <script src="/assets/js/nav.js" defer></script>
+  <script src="/assets/js/forms.js" defer></script>
+
+  {% if extraScripts %}{{ extraScripts | safe }}{% endif %}
+
+</body>
+</html>

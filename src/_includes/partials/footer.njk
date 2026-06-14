@@ -1,0 +1,24 @@
+<footer class="site-footer">
+  <div class="social-bar">
+    <div class="social-bar__inner">
+      <div class="social-bar__left">
+        <span class="section-label section-label--dark">{{ site.social.label }}</span>
+        <p class="social-tagline">{{ site.social.tagline }}</p>
+      </div>
+      <div class="social-bar__links">
+        {% for link in site.social.links %}
+          <a href="{{ link.href }}" class="social-link" target="_blank" rel="noopener" aria-label="Follow Lee on {{ link.label }}">
+            <span aria-hidden="true">→</span> {{ link.label }}
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bar">
+    <div class="footer-bar__inner">
+      <p class="footer-copy">&copy; {% year %} {{ site.footer.copy }}</p>
+      <span class="footer-logo">{{ site.footer.title }}</span>
+    </div>
+  </div>
+</footer>
