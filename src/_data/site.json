@@ -4,15 +4,15 @@
     "author": "Lee Hahn",
     "description": "The Math of Relationships, Emotions, and Change. A new book by Lee Hahn on noticing, owning, and changing your patterns so your life actually shifts.",
     "url": "https://radicaleresponsibility.com",
-    "ogImage": "/assets/images/og-image.jpg",
+    "ogTitle": "Radical Responsibility: One woman's journey to finding herself",
+    "ogImage": "/assets/images/og-share.jpg",
     "twitterHandle": "@leehahn"
   },
 
   "links": {
     "buyBook": "#",
-    "instagram": "https://instagram.com/leehahn",
-    "linkedin": "https://linkedin.com/in/leehahn",
-    "youtube": "https://youtube.com/@leehahn"
+    "instagram": "https://instagram.com/radicalresponsibilitybooks",
+    "tiktok": "https://tiktok.com/@radical.responsib"
   },
 
   "cta": {
@@ -37,8 +37,8 @@
     "subtitle": "Will Change How You See Everything",
     "body": "This isn't about fixing other people. It's about noticing, owning, and changing your patterns so your life actually shifts.",
     "ctaPrimary": { "href": "#" },
-    "ctaSecondary": { "label": "Follow Lee", "href": "https://instagram.com/leehahn" },
-    "image": { "src": "/assets/images/lee-hero.jpg", "alt": "Lee Hahn — Author of Radical Responsibility" }
+    "ctaSecondary": { "label": "Follow Lee", "href": "https://instagram.com/radicalresponsibilitybooks" },
+    "image": { "src": "/assets/images/lee-hero.png", "alt": "Lee Hahn — Author of Radical Responsibility" }
   },
 
   "framework": {
@@ -179,9 +179,8 @@
     "label": "Follow Along",
     "tagline": "The work continues between the pages.",
     "links": [
-      { "label": "Instagram", "href": "https://instagram.com/leehahn" },
-      { "label": "LinkedIn", "href": "https://linkedin.com/in/leehahn" },
-      { "label": "YouTube", "href": "https://youtube.com/@leehahn" }
+      { "label": "Instagram", "href": "https://instagram.com/radicalresponsibilitybooks" },
+      { "label": "TikTok", "href": "https://tiktok.com/@radical.responsib" }
     ]
   },
 

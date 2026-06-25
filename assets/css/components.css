@@ -67,6 +67,13 @@
   background: #1a1a1a;
 }
 
+.btn--disabled,
+[aria-disabled="true"].btn {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: default;
+}
+
 
 /* ----------------------------------------------
    SECTION LABEL (eyebrow)

@@ -18,7 +18,6 @@ pageDescription: "The Math of Relationships, Emotions, and Change. A new book by
     <div class="rule reveal-from-left" style="--delay: 0.25s"></div>
     <p class="hero__body reveal-from-left" style="--delay: 0.3s">{{ site.hero.body }}</p>
     <div class="hero__cta reveal-from-left" style="--delay: 0.4s">
-      <a href="{{ site.hero.ctaPrimary.href }}" class="btn btn--primary">{{ site.cta.buyLabel }}</a>
       <a href="{{ site.hero.ctaSecondary.href }}" class="btn btn--secondary" target="_blank" rel="noopener">{{ site.hero.ctaSecondary.label }}</a>
     </div>
   </div>
@@ -156,7 +155,6 @@ pageDescription: "The Math of Relationships, Emotions, and Change. A new book by
       {% for para in site.book.paragraphs %}
         <p class="book__body reveal-up" style="--delay: {{ 0.2 + loop.index0 * 0.1 }}s">{{ para }}</p>
       {% endfor %}
-      <a href="{{ site.book.cta.href }}" class="btn btn--primary reveal-up" style="--delay: 0.4s">{{ site.cta.buyLabel }}</a>
     </div>
   </div>
 </section>
@@ -184,7 +182,6 @@ pageDescription: "The Math of Relationships, Emotions, and Change. A new book by
       {{ site.finalCta.title }}<br><em>{{ site.finalCta.titleItalic }}</em>
     </h2>
     <p class="final-cta__sub reveal-up" style="--delay: 0.2s">{{ site.finalCta.subtitle }}</p>
-    <a href="{{ site.finalCta.cta.href }}" class="btn btn--primary reveal-up" style="--delay: 0.3s">{{ site.cta.buyLabel }}</a>
   </div>
 </section>
 

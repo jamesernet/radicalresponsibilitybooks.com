@@ -35,7 +35,8 @@
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: encode(data),
       })
-        .then(() => {
+        .then((response) => {
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
           form.reset();
           if (success) {
             success.hidden = false;

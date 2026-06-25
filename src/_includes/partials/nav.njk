@@ -9,7 +9,7 @@
       {% for link in site.nav.links %}
         <a href="{{ link.href }}" class="nav-link">{{ link.label }}</a>
       {% endfor %}
-      <a href="{{ site.links.buyBook }}" class="btn btn--solid">{{ site.cta.buyLabelShort }}</a>
+      <span class="btn btn--solid btn--disabled" aria-disabled="true">{{ site.cta.buyLabelShort }}</span>
     </div>
 
     <!-- Mobile hamburger -->
@@ -30,8 +30,7 @@
     {% endfor %}
     <div class="nav-panel__divider"></div>
     <a href="{{ site.links.instagram }}" class="nav-panel__social" target="_blank" rel="noopener">Instagram</a>
-    <a href="{{ site.links.linkedin }}" class="nav-panel__social" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="{{ site.links.youtube }}" class="nav-panel__social" target="_blank" rel="noopener">YouTube</a>
-    <a href="{{ site.links.buyBook }}" class="btn btn--primary nav-panel__cta">{{ site.cta.buyLabel }}</a>
+    <a href="{{ site.links.tiktok }}" class="nav-panel__social" target="_blank" rel="noopener">TikTok</a>
+    <span class="btn btn--primary nav-panel__cta btn--disabled" aria-disabled="true">{{ site.cta.buyLabel }}</span>
   </div>
 </aside>
