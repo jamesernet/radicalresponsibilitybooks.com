@@ -1,12 +1,3 @@
-/**
- * forms.js
- * Submits Netlify forms via fetch so the user stays on the page
- * and sees an inline success message instead of a redirect.
- *
- * Works with the notify form (#notify-form) and contact form (#contact-form).
- * Falls back to normal submission if fetch fails.
- */
-
 (function () {
   'use strict';
 
@@ -24,11 +15,8 @@
     form.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      const formData = new FormData(form);
       const data = {};
-      formData.forEach((value, key) => {
-        data[key] = value;
-      });
+      new FormData(form).forEach((value, key) => { data[key] = value; });
 
       fetch('/', {
         method: 'POST',
@@ -40,7 +28,6 @@
           form.reset();
           if (success) {
             success.hidden = false;
-            // Hide the input row after success on the notify form
             const row = form.querySelector('.notify__row');
             if (row) row.style.display = 'none';
             const btn = form.querySelector('.btn');
@@ -48,9 +35,7 @@
           }
         })
         .catch((error) => {
-          // Fall back to native submit if AJAX fails
           console.error('Form submission error:', error);
-          form.submit();
         });
     });
   };
