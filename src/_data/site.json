@@ -11,12 +11,11 @@
 
   "links": {
     "buyBook": "#",
-    "instagram": "https://instagram.com/radicalresponsibilitybooks",
-    "tiktok": "https://tiktok.com/@radical.responsib"
+    "instagram": "https://instagram.com/radicalresponsibilitybooks"
   },
 
   "cta": {
-    "_comment": "When the book launches, change buyLabel from 'Preorder the Book' to 'Buy the Book'. This updates the nav, hero, book section, and final CTA all at once.",
+    "_comment": "When the book launches, change buy Label from 'Preorder the Book' to 'Buy the Book'. This updates the nav, hero, book section, and final CTA all at once.",
     "buyLabel": "Preorder the Book",
     "buyLabelShort": "Preorder"
   },
@@ -179,8 +178,7 @@
     "label": "Follow Along",
     "tagline": "The work continues between the pages.",
     "links": [
-      { "label": "Instagram", "href": "https://instagram.com/radicalresponsibilitybooks" },
-      { "label": "TikTok", "href": "https://tiktok.com/@radical.responsib" }
+      { "label": "Instagram", "href": "https://instagram.com/radicalresponsibilitybooks" }
     ]
   },
 
